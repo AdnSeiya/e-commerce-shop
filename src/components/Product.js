@@ -13,7 +13,6 @@ export default class Product extends Component {
                 <ProductConsumer>
                         {value => (<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
                             <Link to="/details">
-                                <p>{img}</p>
                                 <img src={img} alt="product" className="card-img-top" />
                             </Link>
                             <button className="cart-btn" disabled={inCart ? true : false}
@@ -31,8 +30,8 @@ export default class Product extends Component {
                          {title}
                      </p>
                      <h5 className="text-blue font-italic mb-0">
-                         <span className="mr-1">$</span>
                          {price}
+                         <span className="mr-1">CHF</span>
                      </h5>
                  </div>
                </div>
